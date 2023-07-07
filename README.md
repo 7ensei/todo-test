@@ -20,52 +20,18 @@ $ http://localhost:4000/transactions/max/delta/100
 $ npm install
 ```
 
-## .env
-
-```bash
-# you can change however you want
-DB_CONNECTION=postgres
-DB_HOST=localhost
-DB_USER=postgres
-DB_PASSWORD=postgres
-DB_DB=master
-DB_PORT=5432
-APP_PORT=4000
-DB_ENTITIES=dist/**/*.entity.js
-DB_MIGRATIONS=dist/**/migrations/*.js
-# you can enter yours API_KEY
-API_KEY=FV64BT7T5Q8G222176MG463ZQF3I2P6STX
-BASE_URL='https://api.etherscan.io'
-```
-
-## Running DB
+## Running the app
 
 ```bash
 # development
 $ docker-compose up -d
-```
-
-
-## Running migrations
-
-```bash
 # run migrations
 $ npm run migration:run
-
-# revert migrations
-$ npm run migration:revert
-```
-
-
-## Running the app
-
-```bash
 # development
 $ npm run start
 
 # watch mode
 $ npm run start:dev
-
 # production mode
 $ npm run build
 $ npm run start:prod

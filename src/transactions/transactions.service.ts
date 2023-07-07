@@ -46,6 +46,6 @@ export class TransactionsService {
             });
         }
 
-        return balancesArr.reduce((acc, curr) => acc.delta > curr.delta ? acc : curr);
+        return balancesArr.reduce((acc, curr) => acc.delta > curr.delta ? acc : curr, {});
     }
 }
